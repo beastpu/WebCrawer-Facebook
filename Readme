@@ -1,0 +1,22 @@
+FB广告资料库爬虫需求
+目标网站:
+https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&impression_search_field=has_impressions_lifetime&q=AFK%20Arena&view_all_page_id=1923406521283668 
+  
+一、需求概述: 
+每周在该网站上搜索⼏款竞品游戏，下载搜索结果中的文案、图片/视频，并按月分文件夹存储在共享文档中。
+文件命名规则：id+游戏名（递增排序），所有素材本月内排重（比如8月份出现了3次，只下载一次，但是如果9月份也出现了，则8月9月各下载一次）。
+例：1-AFK Arena.MP4
+文件夹命名规则：游戏名—月份-文件
+例：【AFK Arena】——【201907】——各种文件
+图片或视频直接存到公司的共享网盘中， 
+
+
+2. 文案需收录到一个在线Excel表或在线页面中，每日更新，每月一张表，包含所有爬的游戏 - 【按照日期、游戏、文案、素材id】记录文案
+- 不去重
+- 例如: 
+ 
+
+期望做到：点击素材id可以超链接到共享盘直接打开视频
+三、搜索⽬目标游戏: 
+- 可自主增加或减少，首批次爬虫如下: 
+AFK Arena ：https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&impression_search_field=has_impressions_lifetime&q=AFK%20Arena&view_all_page_id=1923406521283668
