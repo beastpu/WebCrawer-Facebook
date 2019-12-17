@@ -29,8 +29,9 @@ def access(url,date):
 
     prox = Proxy()
     prox.proxy_type = ProxyType.MANUAL
-    prox.http_proxy = "http://proxy.91act.com:10086"
-    prox.ssl_proxy = "http://proxy.91act.com:10086"
+    #代理记得要挂上
+    prox.http_proxy = "http://proxy.****.com:10086"
+    prox.ssl_proxy = "http://proxy.****.com:10086"
     capabilities = webdriver.DesiredCapabilities.CHROME
     prox.add_to_capabilities(capabilities)
     
